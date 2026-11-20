@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revolução Fitness · Academia em Duque de Caxias</title>
+<meta name="description" content="Academia no Parque Lafaiete, Duque de Caxias. Fale pelo WhatsApp e conheça a Revolução Fitness.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bk:#0c0d0f;--bk2:#15171a;--bk3:#1d2024;--lime:#c6ff3d;--lime2:#a7dd24;--wh:#f4f5f2;--gr:#9aa1a9;--line:rgba(255,255,255,.12);--disp:'Barlow Condensed','Arial Narrow','Arial Black',Impact,sans-serif;--sans:'Barlow',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bk);color:var(--wh);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+svg{display:block;max-width:100%}a{color:inherit}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+.wm{position:fixed;inset:0;z-index:90;pointer-events:none;background-repeat:repeat;background-size:420px 260px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='260'%3E%3Cg transform='rotate(-24 210 130)' font-family='Arial,sans-serif' text-anchor='middle' fill='%23fff' fill-opacity='.09'%3E%3Ctext x='210' y='125' font-size='34' font-weight='700' letter-spacing='6'%3EPR%C3%89VIA%3C/text%3E%3Ctext x='210' y='152' font-size='13' letter-spacing='3'%3EPROPOSTA DE SITE%3C/text%3E%3C/g%3E%3C/svg%3E")}
+.banner{background:var(--lime);color:#111;font-size:13px;font-weight:600;text-align:center;padding:9px 16px}
+header{position:sticky;top:0;z-index:50;background:rgba(12,13,15,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+.brand{text-decoration:none;font-family:var(--disp);font-style:italic;font-weight:800;font-size:1.7rem;letter-spacing:.02em;text-transform:uppercase;line-height:1}
+.brand span{color:var(--lime)}
+nav ul{display:flex;gap:32px;list-style:none;font-weight:500;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--gr);transition:color .2s}nav a:hover{color:var(--lime)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;background:var(--lime);color:#0c0d0f;text-decoration:none;font-family:var(--disp);font-weight:800;font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;padding:14px 30px;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:background .2s,transform .2s}
+.btn:hover{background:#fff;transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;fill:currentColor;flex:none}
+.btn.ghost{background:transparent;color:var(--wh);box-shadow:inset 0 0 0 2px var(--lime);clip-path:none;border-radius:2px;padding:12px 28px}
+.btn.ghost:hover{background:var(--lime);color:#0c0d0f}
+.hero{position:relative;overflow:hidden;padding:80px 0 100px}
+.hero::before{content:"";position:absolute;right:-8%;top:0;bottom:0;width:48%;background:var(--bk3);transform:skewX(-12deg)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 40%,rgba(198,255,61,.16),transparent 55%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.tag{display:inline-block;color:var(--lime);font-family:var(--disp);font-weight:700;font-size:1rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px}
+.tag::before{content:"";display:inline-block;width:38px;height:3px;background:var(--lime);vertical-align:middle;margin-right:14px}
+h1{font-family:var(--disp);font-style:italic;font-weight:800;font-size:clamp(3.2rem,8.4vw,7.4rem);line-height:.9;text-transform:uppercase;letter-spacing:-.005em}
+h1 .o{color:transparent;-webkit-text-stroke:2px var(--lime)}
+.lead{margin-top:26px;font-size:1.15rem;color:#c9ced4;max-width:29em}
+.cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:36px;align-items:center}
+.bell{width:100%;max-width:520px;margin-inline:auto;animation:lift 6s ease-in-out infinite}
+@keyframes lift{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.strip{background:var(--lime);color:#0c0d0f;overflow:hidden;white-space:nowrap;transform:skewY(-1.2deg);margin:-10px 0}
+.track{display:inline-flex;animation:slide 24s linear infinite;padding:15px 0}
+.track span{font-family:var(--disp);font-style:italic;font-weight:800;font-size:1.5rem;letter-spacing:.05em;text-transform:uppercase;padding:0 26px}
+.track span::after{content:"/";margin-left:52px;opacity:.5}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:96px 0}
+h2{font-family:var(--disp);font-style:italic;font-weight:800;font-size:clamp(2.3rem,5vw,4rem);line-height:.98;text-transform:uppercase}
+h2 em{font-style:italic;color:var(--lime)}
+.sub{margin-top:14px;color:var(--gr);max-width:36em}
+.sec-h{margin-bottom:46px}
+.mod{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.m{background:var(--bk2);border:1px solid var(--line);border-top:3px solid var(--lime);padding:32px 28px;position:relative;transition:transform .3s,background .3s}
+.m:hover{transform:translateY(-6px);background:var(--bk3)}
+.m .n{font-family:var(--disp);font-style:italic;font-weight:800;font-size:3.4rem;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(198,255,61,.7)}
+.m h3{font-family:var(--disp);font-weight:800;font-size:1.8rem;text-transform:uppercase;margin:10px 0 8px;line-height:1.05}
+.m p{color:var(--gr);font-size:.98rem}
+.note{margin-top:22px;font-size:.86rem;color:var(--gr)}
+.why{background:var(--bk2);border-block:1px solid var(--line)}
+.wg{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.list{display:grid;gap:0}
+.list>div{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.list>div:first-child{border-top:1px solid var(--line)}
+.list i{font-family:var(--disp);font-style:italic;font-weight:800;font-size:1.7rem;color:var(--lime)}
+.list h3{font-family:var(--disp);font-weight:700;font-size:1.4rem;text-transform:uppercase;line-height:1.1}
+.list p{color:var(--gr);font-size:.96rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.s{padding:6px 34px 6px 0;border-top:3px solid var(--lime)}
+.s+.s{padding-left:34px;border-left:1px solid var(--line)}
+.s .n{font-family:var(--disp);font-style:italic;font-weight:800;font-size:3.6rem;line-height:1;color:var(--lime);margin-top:14px}
+.s h3{font-family:var(--disp);font-weight:800;font-size:1.7rem;text-transform:uppercase;margin:6px 0 6px}
+.s p{color:var(--gr);font-size:.98rem}
+.final{background:var(--lime);color:#0c0d0f;padding:84px 0;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;right:-6%;top:0;bottom:0;width:36%;background:rgba(0,0,0,.08);transform:skewX(-12deg)}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(2.6rem,6vw,5rem)}.final h2 em{color:#fff;-webkit-text-stroke:0}
+.final p{margin:16px 0 30px;max-width:30em;font-weight:500}
+.final .btn{background:#0c0d0f;color:var(--lime)}.final .btn:hover{background:#fff;color:#0c0d0f}
+.loc{display:flex;flex-wrap:wrap;gap:12px 44px;margin-top:40px;font-weight:600}
+.loc b{display:block;font-family:var(--disp);font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;opacity:.6}
+footer{padding:30px 0 120px;font-size:.84rem;color:var(--gr)}
+footer p{max-width:52em;margin-bottom:8px}footer .pf{color:var(--lime);font-weight:600}
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25a35a;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.7);transition:transform .2s}
+.fab:hover{transform:scale(1.08)}.fab svg{width:28px;height:28px;fill:#fff}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.bell,.track{animation:none}html{scroll-behavior:auto}}
+@media(max-width:900px){
+ nav ul{display:none}.hero{padding:48px 0 70px}.hero::before{width:70%;right:-30%}
+ .hero .wrap{grid-template-columns:1fr;gap:20px}.bell{max-width:360px}
+ section{padding:68px 0}.mod,.steps{grid-template-columns:1fr}.wg{grid-template-columns:1fr;gap:36px}
+ .s,.s+.s{padding:6px 0 26px;border-left:0}
+}
+@media(max-width:600px){
+ body{font-size:16.5px}.wrap{width:calc(100% - 36px)}.nav{height:64px}.nav .btn{padding:10px 12px 10px 16px;font-size:.82rem;gap:6px}.nav .btn svg{display:none}.brand{white-space:nowrap;font-size:1.3rem}.nav{gap:8px}
+ .brand{font-size:1.4rem}.cta .btn{width:100%;justify-content:center}.banner{font-size:12px}
+ h1 .o{-webkit-text-stroke:1.5px var(--lime)}
+}
+</style>
+</head>
+<body>
+<div class="wm" aria-hidden="true"></div>
+<div class="banner">PRÉVIA · Proposta de site para Revolução Fitness — versão de demonstração, não publicada</div>
+<header><div class="wrap nav">
+ <a class="brand" href="#topo">Revolução<span>Fit</span></a>
+ <nav><ul><li><a href="#treinos">Treinos</a></li><li><a href="#diferenciais">Diferenciais</a></li><li><a href="#comecar">Como começar</a></li><li><a href="#contato">Contato</a></li></ul></nav>
+ <a class="btn" href="https://wa.me/5521972474528?text=Ol%C3%A1!%20Quero%20conhecer%20a%20Revolu%C3%A7%C3%A3o%20Fitness%20e%20saber%20sobre%20os%20planos." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Matricule-se</a>
+</div></header>
+<main id="topo">
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <span class="tag rv">Academia · Parque Lafaiete · Duque de Caxias</span>
+   <h1 class="rv d1">Comece a sua <span class="o">revolução</span> hoje.</h1>
+   <p class="lead rv d2">Treine perto de casa, com orientação e um ambiente feito para você evoluir no seu ritmo. Fale com a gente pelo WhatsApp.</p>
+   <div class="cta rv d2"><a class="btn" href="https://wa.me/5521972474528?text=Ol%C3%A1!%20Quero%20conhecer%20a%20Revolu%C3%A7%C3%A3o%20Fitness%20e%20saber%20sobre%20os%20planos." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Quero conhecer</a><a class="btn ghost" href="#treinos">Ver treinos</a></div>
+  </div>
+  <div class="bell rv d1"><svg viewBox="0 0 520 300" aria-hidden="true"><g transform="rotate(-12 260 150)"><rect x="20" y="138" width="480" height="24" rx="12" fill="#8b929c"/><rect x="60" y="40" width="46" height="220" rx="10" fill="#c6ff3d"/><rect x="112" y="64" width="34" height="172" rx="8" fill="#a7dd24"/><rect x="414" y="40" width="46" height="220" rx="10" fill="#c6ff3d"/><rect x="374" y="64" width="34" height="172" rx="8" fill="#a7dd24"/><rect x="150" y="132" width="16" height="36" fill="#5d636c"/><rect x="354" y="132" width="16" height="36" fill="#5d636c"/></g></svg></div>
+ </div>
+</section>
+<div class="strip" aria-hidden="true"><div class="track"><span>Musculação</span><span>Treino orientado</span><span>Evolução no seu ritmo</span><span>Parque Lafaiete</span><span>Musculação</span><span>Treino orientado</span><span>Evolução no seu ritmo</span><span>Parque Lafaiete</span></div></div>
+
+<section id="treinos">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Escolha o seu <em>treino</em></h2><p class="sub">Do primeiro dia à rotina de treino, com acompanhamento para você saber o que fazer.</p></div>
+  <div class="mod">
+   <article class="m rv"><span class="n">01</span><h3>Musculação</h3><p>Equipamentos e treino montado para o seu objetivo, seja ganhar massa, emagrecer ou condicionar.</p></article>
+   <article class="m rv d1"><span class="n">02</span><h3>Treino orientado</h3><p>Acompanhamento dos profissionais para executar os exercícios com segurança e técnica.</p></article>
+   <article class="m rv d2"><span class="n">03</span><h3>Primeiros passos</h3><p>Para quem nunca treinou ou está voltando, um começo tranquilo, sem pressão.</p></article>
+  </div>
+  <p class="note rv">As modalidades reais e a grade de horários entram aqui, conforme a academia.</p>
+ </div>
+</section>
+
+<section class="why" id="diferenciais">
+ <div class="wrap wg">
+  <div class="rv"><h2>Por que treinar na <em>Revolução</em></h2><p class="sub">Uma academia do bairro, pensada para quem quer resultado com constância e atendimento de perto.</p></div>
+  <div class="list rv d1">
+   <div><i>01</i><div><h3>Perto de você</h3><p>No Parque Lafaiete, fácil de encaixar na sua rotina.</p></div></div>
+   <div><i>02</i><div><h3>Atendimento próximo</h3><p>Você é chamado pelo nome e acompanhado de perto.</p></div></div>
+   <div><i>03</i><div><h3>Ambiente para treinar</h3><p>Espaço pensado para treinar com foco e motivação.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="comecar">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Como <em>começar</em></h2></div>
+  <div class="steps">
+   <div class="s rv"><div class="n">1</div><h3>Chame no WhatsApp</h3><p>Conte seu objetivo e tire suas dúvidas sobre planos e horários.</p></div>
+   <div class="s rv d1"><div class="n">2</div><h3>Conheça a academia</h3><p>Combine uma visita para ver o espaço e conversar com a equipe.</p></div>
+   <div class="s rv d2"><div class="n">3</div><h3>Comece a treinar</h3><p>Escolha o plano, monte seu treino e dê o primeiro passo.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="final" id="contato">
+ <div class="wrap">
+  <h2 class="rv">Sua melhor fase <em>começa agora.</em></h2>
+  <p class="rv d1">Fale com a Revolução Fitness e conheça os planos.</p>
+  <a class="btn rv d2" href="https://wa.me/5521972474528?text=Ol%C3%A1!%20Quero%20conhecer%20a%20Revolu%C3%A7%C3%A3o%20Fitness%20e%20saber%20sobre%20os%20planos." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Chamar no WhatsApp</a>
+  <div class="loc rv d2"><span><b>Endereço</b>R. Pref. Ribeiro, 592 · Parque Lafaiete</span><span><b>Cidade</b>Duque de Caxias · RJ</span><span><b>WhatsApp</b>(21) 97247-4528</span></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">
+ <p class="pf">PRÉVIA · Proposta de site de demonstração. Modalidades, planos, horários, fotos e demais dados a confirmar com a academia.</p>
+ <p>Revolução Fitness · Duque de Caxias, RJ</p>
+</div></footer>
+<a class="fab" href="https://wa.me/5521972474528?text=Ol%C3%A1!%20Quero%20conhecer%20a%20Revolu%C3%A7%C3%A3o%20Fitness%20e%20saber%20sobre%20os%20planos." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+<script>
+(function(){var els=[].slice.call(document.querySelectorAll('.rv'));
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+els.forEach(function(e){io.observe(e)});
+setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4500);})();
+</script>
+</body>
+</html>
